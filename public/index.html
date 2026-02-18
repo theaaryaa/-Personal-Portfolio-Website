@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand" id="nav-name">Portfolio</a>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Full-Stack Engineer</p>
+          <h1 id="hero-title">Building reliable web products.</h1>
+          <p id="hero-subtitle" class="subtitle">Loading profile...</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+          <div class="social-links" id="social-links"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container card">
+        <h2>About</h2>
+        <p id="about-bio">Loading...</p>
+        <div class="meta-row">
+          <span id="about-location">Location</span>
+          <span id="about-email">email@example.com</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-columns">
+          <article class="card">
+            <h3>Frontend</h3>
+            <div id="frontend-skills" class="skills-grid"></div>
+          </article>
+          <article class="card">
+            <h3>Backend</h3>
+            <div id="backend-skills" class="skills-grid"></div>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <div id="tools-skills" class="skills-grid"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container card">
+        <h2>Contact</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" minlength="2" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" minlength="10" required></textarea>
+
+          <button id="submit-btn" type="submit" class="btn btn-primary">Send Message</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="footer-year"></span> <span id="footer-name">Portfolio</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
